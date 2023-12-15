@@ -7,6 +7,7 @@ import {onAuthStateChanged} from "firebase/auth";
 import {auth} from "./firebase.ts";
 import {SignIn} from "./signin/SignIn.tsx";
 import {Loader} from "./loader/Loader.tsx";
+import {Form} from "./form/Form.tsx";
 
 function App() {
     const [loader, setLoader] = useState(true);
@@ -33,7 +34,11 @@ function App() {
                 <Loader/>
                 :
                 user ?
-                    <><Header/></>
+                   ( <>
+                        <Header/>
+                        <Form/>
+                    </>)
+
                     :
                     <SignIn/>
 
