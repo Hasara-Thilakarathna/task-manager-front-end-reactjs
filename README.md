@@ -1,4 +1,4 @@
-# To-Do App front-end
+# TaskVista Task Manager App front-end
 
 
 ## Version
