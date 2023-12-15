@@ -13,3 +13,7 @@
     color: darkred;
 }
 
+.task {
+    text-decoration: line-through;
+}
+

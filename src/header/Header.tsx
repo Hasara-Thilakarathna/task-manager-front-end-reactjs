@@ -6,9 +6,11 @@ export function Header() {
         signOut(auth);
     }
     return (
-        <header className="d-flex justify-content-between p-3 border-bottom border-3 border-dark-subtle bg-secondary">
-            <h3 className="fs-1 text-white fw-bold">TaskVista📑</h3>
-            <button onClick={handleSignOut} className="btn btn-outline-danger px-1 py-0">Sign Out</button>
+        <header className="d-flex justify-content-between py-3 px-2 border-bottom border-3 border-dark-subtle">
+            <h3 className="animate__animated animate__tada fs-3 text-white fw-bold">TaskVista📑</h3>
+            <button onClick={handleSignOut} className="btn btn-danger px-1 btn-sm">
+                <i className="bi bi-escape"></i> SIGN OUT
+            </button>
         </header>
     );
 }
