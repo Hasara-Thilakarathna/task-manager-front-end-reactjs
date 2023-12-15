@@ -8,7 +8,7 @@ import {SignIn} from "./signin/SignIn.tsx";
 import {Loader} from "./loader/Loader.tsx";
 import {Form} from "./form/Form.tsx";
 import {useTaskDispatcher, useTaskList} from "./context/TaskContext.tsx";
-import {getAllTasks} from "./service/TaskService.tsx";
+import {getAllTasks} from "./service/task-service.tsx";
 import {Task} from "./task/Task.tsx";
 
 function App() {
