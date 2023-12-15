@@ -1,0 +1,7 @@
+#signin-wrapper {
+    height: 500px;
+}
+
+#btn-google-signin:hover {
+    cursor: pointer;
+}
