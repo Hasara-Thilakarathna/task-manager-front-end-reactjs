@@ -1,14 +1,16 @@
 import './Form.css'
 import {FormEvent, useRef, useState} from "react";
+import {useTaskDispatcher} from "../context/TaskContext.tsx";
 export function Form() {
     const [value, setValue] = useState("")
 
     const txtRef = useRef<HTMLInputElement>(null);
+    const taskDispatcher = useTaskDispatcher();
 
 
     function handleSubmit(e:FormEvent){
         e.preventDefault();
-        // Todo: Create a new task
+
         // Todo: Add the task into the task list
         setValue("");
         txtRef.current!.focus();
