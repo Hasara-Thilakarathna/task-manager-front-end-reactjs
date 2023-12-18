@@ -4,6 +4,7 @@
 - React.js
 - Firebase
 - CSS3
+- Redux
 - PNPM
 - Bootstrap framework
 
